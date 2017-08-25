@@ -1,4 +1,4 @@
-package com.evampsaanga.helloworld.keystoretoolexample;
+package com.muhammadatif.crypto.keystoretoolexample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

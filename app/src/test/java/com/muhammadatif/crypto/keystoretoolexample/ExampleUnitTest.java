@@ -1,4 +1,4 @@
-package com.evampsaanga.helloworld.keystoretoolexample;
+package com.muhammadatif.crypto.keystoretoolexample;
 
 import org.junit.Test;
 
