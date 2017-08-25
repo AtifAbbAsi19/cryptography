@@ -3,7 +3,7 @@ package com.muhammadatif.crypto.encryptdecrypt.processtime;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by Atif Arif on 8/25/2017.
+ * Created by Muhammad Atif  on 8/25/2017.
  */
 
 public class ProcessTime {

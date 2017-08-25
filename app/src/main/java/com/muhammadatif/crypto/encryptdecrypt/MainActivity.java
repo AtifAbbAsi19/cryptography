@@ -1,20 +1,17 @@
 package com.muhammadatif.crypto.encryptdecrypt;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.muhammadatif.crypto.encryptdecrypt.main.AppClass;
-import com.muhammadatif.crypto.encryptdecrypt.processtime.ProcessTime;
-import com.muhammadatif.crypto.encryptdecrypt.security.AndroidConcealHelper;
 import com.facebook.crypto.exception.CryptoInitializationException;
 import com.facebook.crypto.exception.KeyChainException;
-
+import com.muhammadatif.crypto.encryptdecrypt.main.AppClass;
+import com.muhammadatif.crypto.encryptdecrypt.security.AndroidConcealHelper;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {

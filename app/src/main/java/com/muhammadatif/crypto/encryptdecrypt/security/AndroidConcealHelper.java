@@ -2,7 +2,6 @@ package com.muhammadatif.crypto.encryptdecrypt.security;
 
 import android.content.Context;
 import android.util.Base64;
-
 import com.facebook.android.crypto.keychain.AndroidConceal;
 import com.facebook.android.crypto.keychain.SharedPrefsBackedKeyChain;
 import com.facebook.crypto.Crypto;
@@ -11,7 +10,6 @@ import com.facebook.crypto.Entity;
 import com.facebook.crypto.exception.CryptoInitializationException;
 import com.facebook.crypto.exception.KeyChainException;
 import com.facebook.crypto.keychain.KeyChain;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -19,7 +17,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by Muhammad Atif Arif on 8/24/2017.
+ * Created by Muhammad Atif  on 8/24/2017.
  */
 
 public class AndroidConcealHelper {
