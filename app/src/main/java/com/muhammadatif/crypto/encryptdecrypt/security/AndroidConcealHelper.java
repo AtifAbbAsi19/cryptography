@@ -22,8 +22,6 @@ import java.io.OutputStream;
  * Created by Muhammad Atif Arif on 8/24/2017.
  */
 
-
-
 public class AndroidConcealHelper {
 
     private static Crypto crypto;
@@ -60,9 +58,6 @@ public class AndroidConcealHelper {
     public static String encrypt(String key, String value) throws KeyChainException,
             CryptoInitializationException, IOException {
 
-        // Check for whether the crypto functionality is available
-        // This might fail if Android does not load libraries correctly.
-
         String result = "Crypto not found";
 
         if (isAvailable()) {
@@ -86,9 +81,7 @@ public class AndroidConcealHelper {
     public static String decrypt(String key, String value) throws KeyChainException,
             CryptoInitializationException, IOException {
 
-        // Check for whether the crypto functionality is available
-        // This might fail if Android does not load libraries correctly.
-
+     
         String result= "Crypto not found";
 
         if (isAvailable()) {
