@@ -7,7 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.muhammadatif.crypto.encryptdecrypt.main.AppClass;
+import com.muhammadatif.crypto.encryptdecrypt.processtime.ProcessTime;
 import com.muhammadatif.crypto.encryptdecrypt.security.AndroidConcealHelper;
 import com.facebook.crypto.exception.CryptoInitializationException;
 import com.facebook.crypto.exception.KeyChainException;
@@ -27,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     AndroidConcealHelper androidConcealHelper;
 
+    String temp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +50,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 try {
-                    encryptedText.setText(androidConcealHelper.encrypt(createKeyStore.getText().toString(),inputDataTextField.getText().toString()));
+                    AppClass.startTimeEncryption();
+
+                    temp=androidConcealHelper.encrypt(createKeyStore.getText().toString(),inputDataTextField.getText().toString());
+                    float sec=AppClass.endTimeEncryption();
+                    encryptedText.setText(temp);
+                    temp="";
+
+//                    encryptedText.setText(androidConcealHelper.encrypt(createKeyStore.getText().toString(),inputDataTextField.getText().toString()));
+//
+//
+//                    float sec=AppClass.endTimeEncryption();
+                  Toast.makeText(getApplicationContext(), "SEC::"+ sec+"s", Toast.LENGTH_SHORT).show();
                 } catch (KeyChainException e) {
                     e.printStackTrace();
                 } catch (CryptoInitializationException e) {
@@ -64,7 +80,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 try {
-                    decryptedText.setText(androidConcealHelper.decrypt(createKeyStore.getText().toString(),encryptedText.getText().toString()));
+                    AppClass.startTimeDecryption();
+
+                    temp=androidConcealHelper.decrypt(createKeyStore.getText().toString(),encryptedText.getText().toString());
+
+                    float sec=AppClass.endTimeDecryption();
+
+                    decryptedText.setText(temp);
+
+                    Toast.makeText(getApplicationContext(), ""+sec+"s", Toast.LENGTH_SHORT).show();
                 } catch (KeyChainException e) {
                     e.printStackTrace();
                 } catch (CryptoInitializationException e) {

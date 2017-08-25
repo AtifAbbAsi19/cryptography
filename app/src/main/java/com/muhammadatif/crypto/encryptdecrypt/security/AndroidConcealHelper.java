@@ -28,6 +28,13 @@ public class AndroidConcealHelper {
 
     private static Crypto crypto;
     private KeyChain keyChain;
+    private  static AndroidConcealHelper androidConcealHelper=null;
+
+
+    public static AndroidConcealHelper getInstance(Context context) {  //Singleton Pattren
+        if (androidConcealHelper == null) androidConcealHelper = new AndroidConcealHelper(context);
+        return androidConcealHelper;
+    }
 
 
     public AndroidConcealHelper(Context context) { // Default Constructor
