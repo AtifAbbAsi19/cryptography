@@ -139,7 +139,7 @@ Entity entity = Entity.create(someStringId);
 
 #### New code using 256-keys and Entity.create
 
-###To install conceal on your Android application project, First you need to download the following binaries :
+#### To install conceal on your Android application project, First you need to download the following binaries :
 
 ###libconceal.jar from https://raw.github.com/facebook/conceal/gh-pages/downloads/libconceal.jar
 
@@ -159,6 +159,9 @@ simply Add both jars as dependencies
 
 #Nativebinaries from https://raw.github.com/facebook/conceal/gh-pages/downloads/libs.zip
 
-go to App/src/main/ create jniLibs folder.
+##instructions
 
-Then, unzip libs.zip drop the .so files into a jniLibs/ folder located at src/main/jniLibs.
+1) go to App/src/main/ create jniLibs folder.
+
+2) Then, unzip libs.zip drop the .so files into a jniLibs/ folder located at src/main/jniLibs.
+
