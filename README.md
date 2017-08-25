@@ -17,5 +17,7 @@ compile files('libs/libconceal.jar')
 compile files('libs/conceal_android.jar') and sync project.!
 
 #Nativebinaries from https://raw.github.com/facebook/conceal/gh-pages/downloads/libs.zip
-Then, go to App/src/main/ create jniLibs folder.
+
+go to App/src/main/ create jniLibs folder.
+
 Then, unzip libs.zip drop the .so files into a jniLibs/ folder located at src/main/jniLibs.
