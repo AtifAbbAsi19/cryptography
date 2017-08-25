@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KeyStoreToolExample</string>
+    <string name="delete" >delete</string>
+    <string name="encrypt" >encrypt</string>
+    <string name="decrypt" >decrypt</string>
+    <string name="key_alias">key alias</string>
+    <string name="generate">generate</string>
+    <string name="initial_text">initial text</string>
+    <string name="final_text">final text</string>
+    <string name="decrypt_result">decrypt result</string>
+</resources>
