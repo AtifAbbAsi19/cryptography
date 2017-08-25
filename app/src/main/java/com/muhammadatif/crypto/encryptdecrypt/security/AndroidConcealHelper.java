@@ -22,29 +22,6 @@ import java.io.OutputStream;
  * Created by Muhammad Atif Arif on 8/24/2017.
  */
 
-/*
-*
-    * To install Conceal on your Android application project, you need to download the following binaries :
-
-    libconceal.jar from https://raw.github.com/facebook/conceal/gh-pages/downloads/libconceal.jar
-    conceal_android.jar from https://raw.github.com/facebook/conceal/gh-pages/downloads/conceal_android.jar
-    #This is how you can add .jar file in Android Studio
-       1) Copy the .jar file.
-       2) paste the file in Libs folder.now open File>Project Structure>Dependencies ,then Click on add button
-          select second Option jar Dependencies and add jar files to project
-          or open build.gradle.
-          simply Add both jars as dependencies
-          compile files('libs/libconceal.jar')
-          compile files('libs/conceal_android.jar') and sync project.!
-    Native binaries from https://raw.github.com/facebook/conceal/gh-pages/downloads/libs.zip
-    Then, go to App/src/main/ create jniLibs folder.
-    Then, unzip libs.zip drop the .so files into a jniLibs/ folder located at src/main/jniLibs.
-
-    *
-*
-*
-* */
-
 
 
 public class AndroidConcealHelper {
@@ -75,6 +52,7 @@ public class AndroidConcealHelper {
 
     public static String encrypt(String key, String value) throws KeyChainException,
             CryptoInitializationException, IOException {
+
         // Check for whether the crypto functionality is available
         // This might fail if Android does not load libraries correctly.
 
