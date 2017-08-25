@@ -1,4 +1,4 @@
-package com.muhammadatif.crypto.keystoretoolexample;
+package com.muhammadatif.crypto.encryptdecrypt;
 
 import org.junit.Test;
 

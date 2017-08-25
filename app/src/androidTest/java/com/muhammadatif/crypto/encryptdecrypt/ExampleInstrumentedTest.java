@@ -1,4 +1,4 @@
-package com.muhammadatif.crypto.keystoretoolexample;
+package com.muhammadatif.crypto.encryptdecrypt;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.muhammadatif.crypto.keystoretoolexample;
+package com.muhammadatif.crypto.encryptdecrypt;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.muhammadatif.crypto.keystoretoolexample.Security.AndroidConcealHelper;
+import com.muhammadatif.crypto.encryptdecrypt.security.AndroidConcealHelper;
 import com.facebook.crypto.exception.CryptoInitializationException;
 import com.facebook.crypto.exception.KeyChainException;
 
